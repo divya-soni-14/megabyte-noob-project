@@ -14,7 +14,7 @@
 	<div class="main">
         <nav>
             <div class="logo">
-                <h1 class = "logo-text">MakerSpace<span id = 'logo-text-2'>NITW</span></h1>
+                <h1 class = "logo-text">DevSpace<span id = 'logo-text-2'>NITW</span></h1>
             </div>
 		<div class="card">
 			<div class="card-title">
@@ -30,13 +30,13 @@
 					<form id="login-form">
 						<input class="input-form" type="email" placeholder="Enter your email" required><br><br>
 						<input class="input-form" type="password" placeholder="Enter your password" required><br><br><br>
-						<input class="submit-form" type="submit" value="Login">
+						<input class="submit-form" id="myButton" type="submit" value="Login">
 					</form>
 					<form id="register-form">
 						<input class="input-form" type="name" placeholder="Enter your full name" required><br><br>
 						<input class="input-form" type="email" placeholder="Enter your email" required><br><br>
 						<input class="input-form" type="password" placeholder="Enter your password" required><br><br>
-						<input class="submit-form" type="submit" value="Register">
+						<input class="submit-form" id="myButton" type="submit" value="Register">
 					</form>
 				</div>
 			</div>
@@ -70,5 +70,11 @@
 			ac.textContent = "Login";
 		}		
 	</script>
+
+<script type="text/javascript">
+    document.getElementById("myButton").onclick = function () {
+        location.href = "./Divya-files/home-page.html";
+    };
+</script>
 </body>
 </html>

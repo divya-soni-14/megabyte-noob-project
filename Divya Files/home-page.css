@@ -2,9 +2,28 @@
   margin: 0;
   padding: 0;
 }
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.shadow {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.16), 0 2px 2px rgba(0, 0, 0, 0.23);
+}
+
+.card-1 {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.card-1:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
 body {
   font-family: sans-serif;
-  background-color: grey;
+  background-color: #171e24;
+  color: whitesmoke;
   display: flex;
   flex-direction: column;
   align-items: auto;
@@ -12,6 +31,7 @@ body {
 
 .header-left .logo {
   object-fit: contain;
+  color: whitesmoke;
   cursor: pointer;
   /*change this later*/
   margin-right: 10px;
@@ -19,23 +39,26 @@ body {
 
 .logo {
   margin-top: 7px;
+  color: whitesmoke;
 }
 
 .header {
   width: stretch;
+  color: whitesmoke;
   display: flex;
   position: sticky;
   top: 0;
   z-index: 999;
   justify-content: space-evenly;
-  border-bottom: 0.1px solid lightgray;
+  border-bottom: 0.1px solid none;
   padding: 10px;
   margin-right: 0;
-  background-color: white;
+  background-color: #1c2a35;
 }
 
 .header-left {
   display: flex;
+  color: whitesmoke;
 }
 
 .headerOptions {
@@ -60,7 +83,7 @@ body {
 }
 
 .hoption:hover {
-  color: black;
+  color: whitesmoke;
 }
 
 .hoption h3 {
@@ -73,11 +96,11 @@ body {
 
 .logo-text {
   padding: 0px;
-  color: black;
+  color: whitesmoke;
 }
 
 .logo-text span {
-  color: blue;
+  color: rgb(7, 255, 172);
 }
 
 .header__search {
@@ -87,17 +110,15 @@ body {
   border-radius: 10px;
   height: 20px;
   margin: 0 20px;
-  background: lightgray;
+  background: #171e24;
 }
 
 .header__search input {
   outline: none;
   border: none;
   background: none;
+  color: whitesmoke;
   width: 25vw;
-}
-
-.header__search ::placeholder {
 }
 
 .text::placeholder {
@@ -121,7 +142,6 @@ body {
 }
 
 .sidebar {
-  position: sticky;
   top: 80px;
   right: 100px;
   flex: 0.2;
@@ -145,11 +165,12 @@ body {
 }
 
 .sidebar-top {
+  position: sticky !important;
   padding: 0;
   width: 240px;
   align-items: center;
   margin-bottom: 0px;
-  background-color: white;
+  background-color: #1c2a35;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   margin-top: 50px;
@@ -201,11 +222,11 @@ body {
 }
 
 .sidebar-stats {
-  background: rgb(255, 255, 255);
+  background: #1c2a35;
   padding: 10px;
   margin: 0px;
   margin-top: 0px;
-  border: 1px solid lightgray;
+  border: 1px solid #131e25;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
@@ -224,15 +245,15 @@ body {
 }
 
 .statNumber {
-  color: rgb(17, 0, 255) !important;
+  color: whitesmokesmoke !important;
   font-weight: 800;
 }
 
 .siderbar-bottom {
   text-align: left;
   padding: 10px;
-  border: 1px solid gray;
-  background-color: white;
+  border: 1px solid #171e24;
+  background-color: #1c2a35;
   margin-top: 10px;
   margin-bottom: 10px;
   border-radius: 5px;
@@ -240,7 +261,7 @@ body {
 
 .recentItem {
   font-family: sans-serif;
-  color: rgb(124, 124, 124);
+  color: whitesmoke;
   font-weight: bolder;
   display: flex;
   cursor: pointer;
@@ -256,10 +277,10 @@ body {
   margin-bottom: 10px;
 }
 .recentItem:hover {
-  background-color: whitesmoke;
+  background-color: #171e24;
   border-radius: 10px;
   cursor: pointer;
-  color: darkslategray;
+  color: whitesmokesmoke;
 }
 
 .recentItem span {
@@ -283,28 +304,19 @@ body {
 }
 
 .feed__inputContainer {
-  background-color: white;
+  background-color: #1c2a35;
   padding: 10px;
   flex: 0.6;
   height: fit-content;
   margin: 10px;
 }
 
-.post {
-  background-color: white;
-  padding: 0px;
-  display: inline-block;
-  height: fit-content;
-  margin: 0px;
-  width: fit-content;
-}
-
 .feed__input {
-  border: 1px solid lightgray;
+  border: 1px solid #171e24;
   border-radius: 30px;
   display: flex;
   padding: 10px;
-  color: gray;
+  color: #171e24;
   padding-left: 15px;
 }
 
@@ -320,7 +332,8 @@ body {
   outline-width: 0px;
   font-weight: 400;
   font-family: sans-serif;
-  color: rgb(39, 39, 39);
+  color: whitesmoke;
+  background-color: #1c2a35;
 }
 
 .feed__inputOptions {
@@ -339,7 +352,104 @@ body {
   cursor: pointer;
 
   border-radius: 10px;
-  background-color: whitesmoke;
 }
 
 /* Post */
+/* .post {
+  background-color: whitesmoke;
+  padding: 10px;
+  flex: 0.6 !important;
+  flex-wrap: stretch;
+  height: fit-content;
+  margin: 10px;
+} */
+
+.post {
+  background-color: #1c2a35;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  flex: 0.6;
+  height: fit-content;
+  margin: 10px;
+}
+
+.post__header {
+  display: flex;
+  flex: 0.6;
+  height: fit-content;
+}
+
+.dp-icon {
+  margin: 10px 15px 10px 10px;
+}
+
+.post__info {
+  margin-top: 15px;
+  font-size: 0.8em;
+  cursor: pointer;
+}
+
+.post__info span {
+  font-weight: 700;
+  margin-top: -4px;
+  font-size: 0.65em;
+  color: whitesmoke;
+  background-color: blueviolet;
+  padding: 3px 7px;
+  border-radius: 30px;
+}
+
+.post1 span {
+  background-color: brown !important;
+}
+
+.post2 span {
+  background-color: green !important;
+}
+
+.post__info p {
+  font-weight: bold;
+  color: darkgray;
+}
+
+.post__reaction {
+  display: flex;
+  justify-content: start;
+}
+
+.post_rxn {
+  margin: 15px 15px 15px 15px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  padding: 10px;
+  padding-top: 10px;
+  font-weight: normal;
+}
+
+.post_rxn:hover {
+  cursor: pointer;
+  color: whitesmoke;
+  font-weight: bold;
+}
+
+.post_rxn h4:hover,
+.rxnicon:hover {
+  font-weight: bold;
+}
+
+.post_rxn h4 {
+  padding: 10px;
+  font-weight: normal;
+  margin-top: -10px;
+  padding-top: 10px;
+}
+
+.post__rxn .rxnicon {
+  margin: 25px 10px 15px 10px !important;
+}
+
+.post__body p {
+  padding: 15px 10px;
+}

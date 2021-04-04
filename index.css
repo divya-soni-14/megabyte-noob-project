@@ -13,7 +13,7 @@ body {
 .main {
   width: 100%;
   height: 100vh;
-  background-color: #008cff;
+  background-color: #171e24;
 }
 
 .card {
@@ -44,7 +44,7 @@ body {
 }
 
 .card-body {
-  background-color: #f5f5f5;
+  background-color: #1c2a35;
   padding: 10px 0px;
   border-radius: 5px;
   width: 100%;
@@ -61,7 +61,7 @@ body {
 .card-body-top > .btn {
   border: 0;
   background-color: transparent;
-  color: #848484;
+  color: #171e24;
   font-size: 16px;
   letter-spacing: 1px;
   font-weight: 500;
@@ -70,14 +70,14 @@ body {
 }
 
 #login {
-  color: #008cff;
+  color: cyan;
 }
 
 #register {
   color: #848484;
 }
 /*.active_btn{
-	color: #008cff!important;
+	color: cyan!important;
 }*/
 
 #pointer-btn {
@@ -118,7 +118,7 @@ body {
 
 .input-form {
   border: none;
-  background-color: transparent;
+  background-color: #171e24;
   color: #fff;
   border-bottom: 1px solid #008cff;
   width: 350px;
@@ -129,7 +129,7 @@ body {
 }
 
 .submit-form {
-  background-color: #008cff;
+  background-color: #00ffff;
   color: rgb(255, 255, 255);
   border: none;
   padding: 10px 25px;
@@ -145,9 +145,9 @@ body {
 
 .logo-text {
   padding: 1em;
-  color: black;
+  color: white;
 }
 
 .logo-text span {
-  color: white;
+  color: cyan;
 }
